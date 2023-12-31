@@ -16,17 +16,26 @@ module.exports = {
         heading2:'#58B6D3',
         heading3:"#EDCD54",
         subHeading:"#A6B6C4",
+        anotherColor:"#062A49",
+        black75:"#000000BF",
+        offWhite:"#F4F4F4",
+        line:"#D9D9D9",
+        tabBg:"#F0F0F0",
+        tabBorder:"#DADADA",
+        tabBgAct:"#FFB8B8",
+        tabBorderAct:"#F17B7B",
+        reviewBorderColor:"#E9E9E9"
       },
       fontSize:{
-        headingSize:"50px"
-      },
-      fontWeight:{
-        headingWeight:700
+        headingSize1:"50px",
+        headingSize2:"30px",
       },
       width:{
         formWidth:"430px",
         headingWidth:"530px",
         subHeadingWidth: "450px",
+        tabImgWidth:"1500px",
+        bgWidth:"70vw"
       },
       height:{
         formHeight:"500px",
@@ -34,7 +43,7 @@ module.exports = {
         subHeadingHeight: "65px",
         logoHeight:"32px",
         companyLogo:"38px"
-      }
+      },
     },
   },
   plugins: [],

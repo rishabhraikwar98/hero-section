@@ -1,15 +1,15 @@
 import React from "react";
-import bg from "../../assets/background/background.png";
-import logo from "../../assets/logo/logo.png";
 import Button from "../customButton/Button";
-import logo1 from "../../assets/logo/1.png"
-import logo2 from "../../assets/logo/2.png"
-import logo3 from "../../assets/logo/3.png"
-import logo4 from "../../assets/logo/4.png"
-import logo5 from "../../assets/logo/5.png"
-import logo6 from "../../assets/logo/6.png"
-import logo7 from "../../assets/logo/7.png"
-import logo8 from "../../assets/logo/8.png"
+import bg from "../../assets/background/background.png";
+import logo from "../../assets/logo/section1/logo.png";
+import logo1 from "../../assets/logo/section1/1.png"
+import logo2 from "../../assets/logo/section1/2.png"
+import logo3 from "../../assets/logo/section1/3.png"
+import logo4 from "../../assets/logo/section1/4.png"
+import logo5 from "../../assets/logo/section1/5.png"
+import logo6 from "../../assets/logo/section1/6.png"
+import logo7 from "../../assets/logo/section1/7.png"
+import logo8 from "../../assets/logo/section1/8.png"
 const logos =[logo1,logo2,logo3,logo4,logo5,logo6,logo7,logo8]
 function SectionOne() {
   return (
@@ -19,16 +19,16 @@ function SectionOne() {
     >
       <div className="flex justify-between py-4 px-36 align-middle">
         <div>
-          <img className="h-companyLogo" src={logo} />
+          <img className="h-companyLogo" alt="logo" src={logo} />
         </div>
         <div>
           <Button>Get a Free Trial</Button>
         </div>
       </div>
       <div className="bg-borderColor h-1"></div>
-      <div className="justify-between flex mt-12 px-32">
-        <div className="headingBox mt-16 ml-12">
-          <div className="w-headingWidth h-headingHeight text-headingSize text-white font-headingWeight  leading-tight">
+      <div className="md:block justify-between lg:flex mt-12 md:px-20 lg:px-32">
+        <div className="headingBox md:mt-5 lg:mt-16 ml-12">
+          <div className="w-headingWidth h-headingHeight text-headingSize1 text-white font-bold  leading-tight">
           <text className="bg-gradient-to-r from-heading1 to-heading2 shadow-md">
             #1 Alternative{" "}
           </text>
@@ -105,12 +105,12 @@ function SectionOne() {
           </form>
         </div>
       </div>
-      <div className="text-center text-subHeading mt-10 font-medium">
+      <div className="text-center text-subHeading mt-10 font-medium tracking-wider">
       <text>TRUSTED BY 1000+ GLOBAL BRANDS</text>
       </div>
       <div className="logos flex justify-between px-28 p-12">
         {logos.map((l)=>{
-          return <img className="h-logoHeight" src={l}/>
+          return <img key={l.toString()} alt="logo" className="h-logoHeight" src={l}/>
         })}
       </div>
     </div>
